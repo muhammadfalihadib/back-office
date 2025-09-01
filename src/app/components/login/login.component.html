@@ -1,0 +1,36 @@
+<div class="flex w-full justify-between">
+    <div class="h-screen w-[60%] flex items-center justify-center">
+        <p class="w-[50%] text-2xl">
+            Welcome to <span class="font-bold">Back Office: Employee Management System</span>
+        </p>
+    </div>
+    <div class="m-12 p-4 border-1 rounded-xl w-[30%]">
+        <form [formGroup]="formGroup">
+            <div class="text-lg font-medium mb-4">Sign-in to your account to continue.</div>
+            <div class="mb-4">
+                <label class="required">Username</label>
+                <mat-form-field class="w-full" appearance="outline">
+                    <input type="text" matInput formControlName="username" placeholder="Enter your username">
+                    <mat-error *ngIf="formGroup.get('username')?.hasError('required') && formGroup.get('username')?.touched">
+                        Username is required.
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div class="mb-4">
+                <label class="required">Password</label>
+                <mat-form-field class="w-full" appearance="outline">
+                    <input [type]="showPassword ? 'text' : 'password'" matInput formControlName="password" placeholder="Enter your password">
+                    <button mat-icon-button matSuffix class="m-2" (click)="toggleShowPassword()">
+                        <mat-icon class="cursor-pointer">{{ showPassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+                    </button>
+                    <mat-error *ngIf="formGroup.get('password')?.hasError('required') && formGroup.get('password')?.touched">
+                        Password is required.
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <button type="submit" class="w-full" (click)="onSubmit()" [disabled]="formGroup.invalid" mat-flat-button>
+                Login
+            </button>
+        </form>
+    </div>
+</div>

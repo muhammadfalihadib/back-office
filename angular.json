@@ -32,7 +32,10 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "@angular/material/prebuilt-themes/azure-blue.css",
+              "@ng-select/ng-select/themes/default.theme.css",
+              "src/styles.scss",
+              "tailwindcss/index.css"
             ],
             "scripts": []
           },
@@ -91,6 +94,7 @@
               }
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.scss"
             ],
             "scripts": []

@@ -1,0 +1,9 @@
+<div class="h-screen w-screen flex justify-center items-center">
+    <div class="text-center flex flex-col gap-6">
+        <div>
+            <div class="text-9xl">{{ errorCode }}</div>
+            <div class="text-3xl">{{ errorObject[errorCode] }}</div>
+        </div>
+        <button mat-flat-button (click)="goToHome()">Back to Home</button>
+    </div>
+</div>

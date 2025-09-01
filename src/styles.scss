@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.required::after {
+    content: '*';
+    color: red;
+}
+
+.ng-select .ng-select-container {
+    height: 56px !important;
+    border: 1px solid rgb(116, 119, 127) !important;
+}
+
+.ng-select .ng-select-container .ng-value-container .ng-input {
+    top: 0 !important;
+    padding-left: 16px !important;
+}
+
+.ng-select .ng-select-container .ng-value-container {
+    padding-left: 16px !important;
+}
+
+.ng-select .ng-select-container .ng-value-container .ng-input>input {
+    height: 56px !important;
+}
+
+.ng-select span.ng-arrow-wrapper{
+    padding-right: 16px;
+}
+
+.ng-select.ng-select-single.ng-invalid.ng-touched div.ng-select-container,
+.ng-select.ng-select-multiple.ng-invalid.ng-touched div.ng-select-container{
+    border-color: #ba1a11 !important;
+}
+
+.ng-select.ng-invalid.ng-touched .ng-arrow-wrapper span.ng-arrow{
+    border-color: #ba1a11 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+
+.ng-select + .mat-mdc-form-field-error {
+    margin: 0 16px;
+    font-size: 12px;
+}
+
+.ng-dropdown-panel div.ng-dropdown-panel-items .ng-option.ng-option-selected .ng-option-label,
+.ng-dropdown-panel div.ng-dropdown-panel-items .ng-option.ng-option-selected.ng-option-marked .ng-option-label{
+    font-weight: 500;
+}

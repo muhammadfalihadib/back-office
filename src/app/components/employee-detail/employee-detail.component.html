@@ -1,0 +1,49 @@
+<div class="flex flex-col gap-4 p-6">
+    <div class="text-xl">Employee Detail</div>
+
+    <table class="w-[50%]">
+        <tbody>
+            <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td>{{ data?.username }}</td>
+            </tr>
+            <tr>
+                <td>Full Name</td>
+                <td>:</td>
+                <td>{{ data?.firstName }} {{ data?.lastName }}</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td>{{ data?.email }}</td>
+            </tr>
+            <tr>
+                <td>Birth Date</td>
+                <td>:</td>
+                <td>{{ data?.birthDate | date: 'dd MMM yyyy' }}</td>
+            </tr>
+            <tr>
+                <td>Basic Salary</td>
+                <td>:</td>
+                <td>{{ data?.basicSalary | rupiahCurency }}</td>
+            </tr>
+            <tr>
+                <td>Group</td>
+                <td>:</td>
+                <td>{{ data?.group }}</td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td>:</td>
+                <td>{{ data?.status }}</td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td>:</td>
+                <td>{{ data?.description }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button mat-flat-button class="w-[100px]" (click)="backToList()">OK</button>
+</div>
