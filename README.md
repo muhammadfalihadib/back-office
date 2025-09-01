@@ -23,7 +23,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 1. Clone repository 
   ```bash
-  git clone https://github.com/muhammadfalihadib/back-office
+  git clone https://github.com/muhammadfalihadib/back-office.git
   ```
 2. Navigate to project directory
   ```bash
