@@ -2,6 +2,55 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
 
+## Setup Environment
+
+1. Install NVM (Node Version Manager) [here](https://github.com/coreybutler/nvm-windows/releases)
+  Ctrl+F 'nvm-setup.exe', download the .exe file
+
+2. Install Node version 18.20.4 || ^18.19.1 || ^20.11.1 || ^22.0.0
+  ```bash
+  nvm install 18.20.4
+  ```
+3. Use Node version 18.20.4 || ^18.19.1 || ^20.11.1 || ^22.0.0
+  ```bash
+  nvm use 18.20.4
+  ```
+4. Install Angular version 19.2.1
+  ```bash
+  npm i -g angular/cli@19.2.1
+  ```
+## Installation 
+
+1. Clone repository 
+  ```bash
+  git clone https://github.com/muhammadfalihadib/back-office
+  ```
+2. Navigate to project directory
+  ```bash
+  cd back-office
+  ```
+3. Install dependencies
+  ```bash
+  npm install
+```
+
+## Mock API Setup (JSON Server)
+
+Start JSON Server (run this **before** starting the Angular development server)
+
+```bash
+json-server --watch employee.json --port 3000
+```
+This will start a mock REST API at http://localhost:3000 with the following endpoints:
+
+- ```GET``` http://localhost:3000/employees - Get all employees
+- ```GET``` http://localhost:3000/employees/1 - Get employee by ID
+- ```POST``` http://localhost:3000/employees - Create new employee
+- ```PUT``` http://localhost:3000/employees/1 - Update employee by ID
+- ```DELETE``` http://localhost:3000/employees/1 - Delete employee by ID
+- ```GET``` http://localhost:3000/employees?username=John - Search employees
+
+
 ## Development server
 
 To start a local development server, run:
