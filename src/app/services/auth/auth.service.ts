@@ -8,11 +8,11 @@ export class AuthService {
   accountList: any[] = [
     {
       username: 'falih',
-      password: 'Indocyber1',
+      password: 'Pass1234',
     },
     {
       username: 'andri',
-      password: 'Mandiri1',
+      password: 'Pass1234',
     },
   ];
 
